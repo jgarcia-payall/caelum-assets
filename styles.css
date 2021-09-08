@@ -1,0 +1,491 @@
+/*
+##############
+# Typography #
+##############
+*/
+@font-face {
+    font-family: "Bariol Regular";
+    src: url(./assets/fonts/bariol_regular-webfont.woff);
+}
+
+@font-face {
+    font-family: "Bariol Bold";
+    src: url(./assets/fonts/bariol_bold-webfont.woff);
+}
+
+@font-face {
+    font-family: "Bariol Italic";
+    src: url(./assets/fonts/bariol_regular_italic-webfont.woff);
+}
+
+/* 
+#################
+# Color Palette #
+#################
+*/
+:root{
+    --color-one: #01a5cc;
+    --color-two: #75777b;
+    --color-three: #fff;
+}
+
+/* 
+##################
+# Styles General #
+##################
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bariol Regular";
+}
+
+body{
+    overflow-x: hidden !important;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: "Bariol Bold";
+}
+
+b{
+    font-family: "Bariol Bold"
+}
+
+/* 
+##########
+# Navbar #
+##########
+*/
+.navbar-mobile{
+    display: none;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.navbar-desktop{
+    display: block;
+    background: #fff !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigation-box{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.navigation-box hr{
+    border: 1px solid #78797d;
+    width: 90%;
+}
+
+.navigation-box .first-section{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-box .logo img{
+    width: 180px;
+}
+
+.navbar-desktop .contact-box b{
+    color: #2ea5d0;
+}
+
+/* 
+#####################
+# Header Components #
+#####################
+*/
+
+.header{
+    margin-bottom: 20px;
+    margin-top: 158px;
+}
+
+.banner-video-desktop{
+    width: 100%;
+}
+
+.banner-video-mobile{
+    width: 100%;
+}
+
+.box-video{
+    position: relative;
+}
+
+.box-video .resource{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* 
+#################
+# About Section #
+#################
+*/
+.about-img{
+    width: 94%;
+    border-radius: 50%;
+}
+
+.content-about{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+.about-section{
+    /* padding-left: 96px; */
+}
+
+.about-section h4{
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.about-section p{
+    padding-right: 130px;
+    font-size: 18px;
+}
+
+.about-section .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+###################
+# Banner Parallax #
+###################
+*/
+.banner-parallax{
+    background-image: url(./assets/images/banner/laser-epilation.jpg);
+    color: #fff !important;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px;
+    height: 258px;
+}
+
+.banner-parallax h3{
+    font-size: 40px;
+    text-align: center;
+}
+
+/* 
+##################
+# Skills section #
+##################
+*/
+.skills-section .item1, .skills-section .item2, .skills-section .item3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.skills-section .icon{
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.skills-section .item1{
+    background-color: var(--color-three);
+}
+
+.skills-section .item2{
+    background-color: var(--color-one);
+}
+
+.skills-section .item3{
+    background-color: var(--color-three);
+}
+
+.skills-section h4{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.skills-section .item1 h4{
+    color: var(--color-one);
+}
+
+.skills-section .item1 p{
+    color: var(--color-two);
+}
+
+.skills-section .item2 p{
+    color: var(--color-three);
+}
+
+.skills-section .item3 p{
+    color: var(--color-two);
+}
+
+.skills-section .item2 h4{
+    color: var(--color-three);
+}
+
+.skills-section .item3 h4{
+    color: var(--color-one);
+}
+
+
+/* 
+################
+# Team Section #
+################
+*/
+
+
+.team h4{
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+/* 
+##################
+# Vision Section #
+##################
+*/
+
+.vision-section-desktop{
+    background-image: url(./assets/images/banner/vision-banner.png);
+    background-size: cover;
+}
+
+.vision-section-desktop h3{
+    color: var(--color-one);
+}
+
+.vision-section-desktop .content{
+    /* padding: 60px 290px 60px 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: flex-start;
+    height: 515px;
+    max-width: 583px;
+}
+
+.vision-section-desktop .content h3{
+    font-size: 40px;
+}
+
+.vision-section-desktop .content p{
+    font-size: 20px;
+}
+
+.vision-section-mobile{
+    display: none;
+}
+
+.vision-section-mobile h3{
+    color: #01a6cf;
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+/* 
+####################
+# Services Section #
+####################
+*/
+.services-section h2{
+    font-size: 40px;
+}
+
+
+.services-section .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.services-section .icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--color-one);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.services-section .icon img{
+    width: 36px;
+    height: auto;
+}
+
+/* 
+##################
+# Call to action #
+##################
+*/
+.call-to-action{
+    width: 100%;
+}
+
+/* 
+#################
+# Image Gallery #
+#################
+*/
+.image-gallery .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-gallery .content img{
+    width: 400px;
+    height: auto;
+}
+
+
+/* 
+##########
+# Footer #
+##########
+*/
+footer .box{
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+footer .text{
+    color: #fff !important;
+    text-align: center;
+}
+
+
+/* 
+#################
+# Media Queries #
+#################
+*/
+@media screen and (max-width: 1000px) {
+  .banner-parallax{
+      height: 400px;
+  }
+
+  .banner-parallax h3{
+    font-size: 40px;
+  }
+
+  .vision-section{
+      background: #fff !important;
+  }
+
+  /* 
+##########
+# Navbar #
+##########
+*/
+
+.navbar-mobile{
+    display: block;
+}
+
+.navbar-desktop{
+    display: none;
+}
+
+.header {
+    margin-top: 68px;
+}
+
+
+  /* 
+########################
+# About Section Mobile #
+########################
+*/
+
+  .about-section{
+    padding-left: 0px;
+    }
+
+    .about-section p{
+        padding: 0 20px;
+    }
+
+    .about-section h4{
+        padding: 0 20px;
+    }
+
+    .about-img {
+        width: 82%;
+        border-radius: 50%;
+        margin-top: 24px;
+    }
+
+
+  /* 
+##########
+# Vision #
+##########
+*/
+
+
+    .vision-section-desktop{
+        display: none;
+    }
+
+    .vision-section-mobile{
+        display: block;
+    }
+
+    .skills-section .item1, .skills-section .item2, .skills-section .item3 {
+        padding: 0 50px;
+    }
+
+
+
+    .image-gallery .content img{
+        width: 80%;
+        height: auto;
+    }
+
+
+    footer .logo{
+        margin-bottom: 40px;
+    }
+
+}
+
+
+
+

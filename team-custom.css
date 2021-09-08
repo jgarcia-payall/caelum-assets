@@ -1,0 +1,201 @@
+#team-custom-mobile{
+    display: none;
+  }
+  
+  div.scrollmenu {
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+  
+.scrollmenu .card{
+  display: inline-block;
+  word-wrap: break-word;
+  width: 100%;
+  height: auto !important;
+  white-space: initial;
+  margin-right: 20px;
+}
+  
+  
+/* Desktop */
+.slider-desktop{
+
+  height: 844px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  display: flex;
+  margin: auto 0;
+  flex-direction: column;
+
+  /*Scroll effect */
+  scroll-behavior: smooth;
+}
+  
+  .box-images{
+    display: flex;
+    flex-direction: row;
+    transition: all 1s;
+  }
+  
+  .box-images.active{
+    transform: translate(0, -825px);
+    z-index: 999;
+  }
+  
+  .box-images img{
+    width:500px;
+  }
+  
+  .box-desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrows{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .img-background-one{
+    background-image: url("./assets/images/team/maria-jesus-img.png");
+    width: 50%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .img-content-one{
+    background-image: url("./assets/images/team/maria-jesus-texto-desktop.png");
+    width: 50%;
+    height: 800px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .img-background-two{
+    background-image: url("./assets/images/team/carlos-sandoval-img.png");
+    width: 50%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .img-content-two{
+    background-image: url("./assets/images/team/carlos-sandoval-texto.png");
+    width: 50%;
+    height: 800px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .img-background-three{
+    background-image: url("./assets/images/team/Dr-Juan-Caceido-img.png");
+    width: 50%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .img-content-three{
+    background-image: url("./assets/images/team/Dr-Juan-Caceido-texto.png");
+    width: 50%;
+    height: 800px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .img-background-four{
+    background-image: url("./assets/images/team/javier-murillo-img.png");
+    width: 50%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .img-content-four{
+    background-image: url("./assets/images/team/javier-murillo-texto1.png");
+    width: 50%;
+    height: 800px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  
+  /* Positipons */
+  #desktop-one{
+    order: 1;
+    transition: opacity .3s;
+  }
+  
+  #desktop-two{
+    order: 2;
+    transition: opacity .3s;
+  }
+  
+  #desktop-three{
+    order: 3;
+    transition: opacity .3s;
+  }
+
+  #desktop-four{
+    order: 4;
+    transition: opacity .3s;
+  }
+  
+  /* Effects */
+  .effect1{
+    transform: translate(0, -849px);
+  }
+  
+  .effect2{
+    transform: translate(0, -1697px);
+  }
+  
+  /* Mobile */
+  .carousel-mobile .scrollmenu{
+    width: 100% !important;
+  }
+
+  .carousel-mobile{
+    padding: 24px;
+  }
+  
+  @media screen and (max-width: 800px){
+    #team-custom-mobile{
+      display: block;
+    }
+  
+    .slider-desktop{
+      display: none;
+    }
+  
+    .arrows{
+      display: none;
+    }
+  
+  }
+  
